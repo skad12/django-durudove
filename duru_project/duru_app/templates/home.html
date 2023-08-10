@@ -1,0 +1,1373 @@
+﻿{% load static %}
+{% block content %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>DURU-DOVE APARTMENTS</title>
+
+    <meta charset="UTF-8" />
+    <meta name="description" content="real estate, landing page, one page" />
+    <meta name="keywords" content="real estate, landing page, one page" />
+    <meta name="author" content="Skad" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <script
+      src="{% static 'https://kit.fontawesome.com/eac52936d0.js' %}"
+      crossorigin="anonymous"
+    ></script>
+
+    <link rel="icon" type="image/png" href="{% static 'images/common/favicon.png' %}" />
+
+    <link rel="stylesheet" href="{% static 'css/magnific-popup.min.css' %}" />
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}" />
+    <link rel="stylesheet" href="{% static 'css/owl.carousel.min.css' %}" />
+    <link rel="stylesheet" href="{% static 'css/swiper.min.css' %}" />
+    <link rel="stylesheet" href="{% static 'css/all.min.css' %}" />
+    <link rel="stylesheet" href="{% static 'css/flaticon.css' %}" />
+
+    <link
+      href="{% static 'https://fonts.googleapis.com/css2?family=Assistant:wght@300;400;600;700;800&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300&display=swap' %}"
+      rel="stylesheet"
+    />
+    <link
+      href="{% static 'https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap' %}"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="{% static 'https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0' %}"
+    />
+    <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}" />
+    <link rel="stylesheet" type="text/css" href="{% static 'css/responsive.css' %}" />
+  </head>
+  <body
+    data-spy="scroll"
+    data-target=".navbar"
+    data-offset="100"
+    class="index2"
+  >
+    <header class="top-header header-2 inline-fix">
+      <nav
+        class="navbar navbar-expand-lg justify-content-between navbar-mobile fixed-top"
+      >
+        <div class="container-fluid">
+          <a class="navbar-brand" href="{% static './' %}">
+            <img src="{% static 'images/duru.png' %}" alt="Logo" width="100"
+          /></a>
+          <button
+            class="navbar-toggler collapsed"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbar4"
+            aria-controls="navbar4"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="icon-bar top-bar"></span>
+            <span class="icon-bar middle-bar"></span>
+            <span class="icon-bar bottom-bar"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbar4">
+            <ul class="mr-auto"></ul>
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="{% static '#home' %}">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="{% static '#about' %}">About </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="{% static '#Projects' %}">Projects</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="{% static '#specification' %}">Specification</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="{% static '#gallery' %}">Gallery</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="{% static '#location' %}">Location</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="{% static '#review' %}">Reviews</a>
+              </li>
+            </ul>
+          </div>
+          <div class="extrabtn">
+            <a class="bttn button1 navbutton" href="{% static 'js/form.js' %}">Book Now</a>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Hero section -->
+    <section class="hero-slider hero-style" id="home">
+      <div class="swiper-container">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div
+              class="slide-inner slide-bg-image bg-cover"
+              data-background="{% static 'images/apartments/apt24.jpg' %}"
+            >
+              <div class="container">
+                <div data-swiper-parallax="300" class="slide-title">
+                  <h2>Book Your Dream Home With Us</h2>
+                </div>
+                <div data-swiper-parallax="400" class="slide-text">
+                  <p>Want to see your Partner become more expressive?</p>
+                </div>
+                <div class="clearfix"></div>
+                <div data-swiper-parallax="500" class="slide-btns">
+                  <a href="{% static '#form' %}" class="cta button1">Enquire Now</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div
+              class="slide-inner slide-bg-image"
+              data-background="{% static 'images/apartments/apt1.jpg' %}"
+            >
+              <div class="container">
+                <div data-swiper-parallax="300" class="slide-title">
+                  <h2>Elegant Room for Your Comfort</h2>
+                </div>
+                <div data-swiper-parallax="400" class="slide-text">
+                  <p>Want a Home Away From Home ?</p>
+                </div>
+                <div class="clearfix"></div>
+                <div data-swiper-parallax="500" class="slide-btns">
+                  <a href="{% static 'form' %}" class="cta button1">Enquire Now</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div
+              class="slide-inner slide-bg-image bg-cover"
+              data-background="{% static '/apartments/apt25.jpg' %}"
+            >
+              <div class="container">
+                <div data-swiper-parallax="300" class="slide-title">
+                  <h2>Book Your Dream Home With Us</h2>
+                </div>
+                <div data-swiper-parallax="400" class="slide-text">
+                  <p>Want to see your Partner become more expressive?</p>
+                </div>
+                <div class="clearfix"></div>
+                <div data-swiper-parallax="500" class="slide-btns">
+                  <a href="{% static 'form' %}" class="cta button1">Enquire Now</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div
+              class="slide-inner slide-bg-image bg-cover"
+              data-background="{% static 'images/apartments/apt13.jpg' %}"
+            >
+              <div class="container">
+                <div data-swiper-parallax="300" class="slide-title">
+                  <h2>Book Your Dream Home With Us</h2>
+                </div>
+                <div data-swiper-parallax="400" class="slide-text">
+                  <p>Want to see your Partner become more expressive?</p>
+                </div>
+                <div class="clearfix"></div>
+                <div data-swiper-parallax="500" class="slide-btns">
+                  <a href="{% static 'js/form' %}" class="cta button1">Enquire Now</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div
+              class="slide-inner slide-bg-image bg-cover"
+              data-background="{% static 'images/apartments/apt19.jpg' %}"
+            >
+              <div class="container">
+                <div data-swiper-parallax="300" class="slide-title">
+                  <h2>Book Your Dream Home With Us</h2>
+                </div>
+                <div data-swiper-parallax="400" class="slide-text">
+                  <p>Want to see your Partner become more expressive?</p>
+                </div>
+                <div class="clearfix"></div>
+                <div data-swiper-parallax="500" class="slide-btns">
+                  <a href="{% static 'form' %}" class="cta button1">Enquire Now</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper-pagination"></div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+      </div>
+    </section>
+
+    <!-- Hero label -->
+    <div class="featurelist">
+      <div class="featurelist-1">
+        <div class="flst media">
+          <div class="icon-">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="32"
+              viewBox="0 -960 960 960"
+              width="32"
+            >
+              <path
+                style="fill: white"
+                d="M80-200v-255q0-25 10-47t30-36v-116q0-45 30.5-75.5T226-760h180q22 0 41 10t33 27q14-17 32.5-27t40.5-10h180q45 0 76 30.5t31 75.5v116q20 14 30 36t10 47v255h-60v-80H140v80H80Zm430-355h270v-99q0-20-13.5-33T733-700H550q-17 0-28.5 14T510-654v99Zm-330 0h270v-99q0-18-11.5-32T410-700H226q-19 0-32.5 13.5T180-654v99Zm-40 215h680v-115q0-17-11.5-28.5T780-495H180q-17 0-28.5 11.5T140-455v115Zm680 0H140h680Z"
+              />
+            </svg>
+          </div>
+          <div class="icondata media-body">
+            <p>1 BedRoom <span>&#8358; 42, 500* </span></p>
+          </div>
+        </div>
+        <div class="flst media">
+          <div class="icon-">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="32"
+              viewBox="0 -960 960 960"
+              width="32"
+            >
+              <path
+                style="fill: white"
+                d="M80-200v-255q0-25 10-47t30-36v-116q0-45 30.5-75.5T226-760h180q22 0 41 10t33 27q14-17 32.5-27t40.5-10h180q45 0 76 30.5t31 75.5v116q20 14 30 36t10 47v255h-60v-80H140v80H80Zm430-355h270v-99q0-20-13.5-33T733-700H550q-17 0-28.5 14T510-654v99Zm-330 0h270v-99q0-18-11.5-32T410-700H226q-19 0-32.5 13.5T180-654v99Zm-40 215h680v-115q0-17-11.5-28.5T780-495H180q-17 0-28.5 11.5T140-455v115Zm680 0H140h680Z"
+              />
+            </svg>
+          </div>
+          <div class="icondata media-body">
+            <p>1 BedRoom with Private Pool <span>&#8358; 72, 500* </span></p>
+          </div>
+        </div>
+        <div class="flst media">
+          <div class="icon-">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="32"
+              viewBox="0 -960 960 960"
+              width="32"
+            >
+              <path
+                style="fill: white"
+                d="M80-200v-255q0-25 10-47t30-36v-116q0-45 30.5-75.5T226-760h180q22 0 41 10t33 27q14-17 32.5-27t40.5-10h180q45 0 76 30.5t31 75.5v116q20 14 30 36t10 47v255h-60v-80H140v80H80Zm430-355h270v-99q0-20-13.5-33T733-700H550q-17 0-28.5 14T510-654v99Zm-330 0h270v-99q0-18-11.5-32T410-700H226q-19 0-32.5 13.5T180-654v99Zm-40 215h680v-115q0-17-11.5-28.5T780-495H180q-17 0-28.5 11.5T140-455v115Zm680 0H140h680Z"
+              />
+            </svg>
+          </div>
+          <div class="icondata media-body">
+            <p>3 BedRooms <span>&#8358; 85, 000* </span></p>
+          </div>
+        </div>
+        <div class="flst media">
+          <div class="icon-">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="32"
+              viewBox="0 -960 960 960"
+              width="32"
+            >
+              <path
+                style="fill: white"
+                d="M80-200v-255q0-25 10-47t30-36v-116q0-45 30.5-75.5T226-760h180q22 0 41 10t33 27q14-17 32.5-27t40.5-10h180q45 0 76 30.5t31 75.5v116q20 14 30 36t10 47v255h-60v-80H140v80H80Zm430-355h270v-99q0-20-13.5-33T733-700H550q-17 0-28.5 14T510-654v99Zm-330 0h270v-99q0-18-11.5-32T410-700H226q-19 0-32.5 13.5T180-654v99Zm-40 215h680v-115q0-17-11.5-28.5T780-495H180q-17 0-28.5 11.5T140-455v115Zm680 0H140h680Z"
+              />
+            </svg>
+          </div>
+          <div class="icondata media-body">
+            <p>Studio Room <span>&#8358; 32, 500* </span></p>
+          </div>
+        </div>
+      </div>
+      <!-- <div class="featurelist-2">
+        <div class="flst2">
+          <p>Company Registration<span>DURU123456789XXX</span></p>
+        </div>
+      </div> -->
+    </div>
+
+    <!-- form message -->
+    {% if name %}
+    <br>  
+    <div class="container justify-content-between">
+      <h2>Thanks {{ name }} for choosing Durudove</h2>
+      <p class="bg-green-500"> Your Tour has been Scheduled, and We will contact you Shortly.... </p>
+    </div>
+    <br>
+    {% else %}
+    <!-- About / Form -->
+    <section class="aboutoitawa pad-tb" id="about">
+      <div class="container">
+        <div class="row justify-content-between">
+          <div class="col-lg-6">
+            <div class="common-heading-2">
+              <h2 class="mb15 h2">About Duru-Dove Apartments</h2>
+              <p>
+                Durudove Apartments is a luxury serviced apartment located in
+                kubwa Abuja Nigeria. Durudove apartment varies from 3 bedrooms
+                apartment, 1 bedroom apartment, 1 bedroom apartment with a
+                standard swimming pool and a studio room. Durudove Apartments is
+                situated in a conducive environment. Which is good for people
+                who want to relax, work, have a good time and get good value for
+                your money.
+              </p>
+            </div>
+            <div class="whatwedonw mt40">
+              <div class="itawastats">
+                <p>15</p>
+                <p>PROJECTS COMPLETED</p>
+              </div>
+              <div class="itawastats">
+                <p>7</p>
+                <p>YEARS OF BUILDING TRUST</p>
+              </div>
+              <div class="itawastats">
+                <p>35</p>
+                <p>Residential Townships</p>
+              </div>
+              <div class="itawastats">
+                <p>45</p>
+                <p>Million Sq. Feet area developed</p>
+              </div>
+              <div class="itawastats">
+                <p>2</p>
+                <p>EMPLOYEES IN HOUSE</p>
+              </div>
+              <div class="itawastats">
+                <p>100%</p>
+                <p>Customer Setisfication</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-5 pl0 m-mt30" id="form">
+            <div class="form-block">
+              <div class="form-header">
+                <h3 class="mb10"><span>Get In Touch With Us</span></h3>
+                <p>Schedule a Tour </p>
+              </div>
+              
+              <form action="{% url 'home' %}" data-toggle="validator" class="shake" method="post">
+                {% csrf_token %}
+                <div class="row">
+                  <div class="fieldsets col-sm-12">
+                    <input
+                      type="text"
+                      id="name"
+                      placeholder="Enter name"
+                      name="name"
+                      required
+                      data-error="Please fill Out"
+                    />
+                    <div class="help-block with-errors"></div>
+                  </div>
+                  <div class="fieldsets col-sm-12">
+                    <input
+                      type="email"
+                      id="email"
+                      name="email"
+                      placeholder="Enter email"
+                      required
+                    />
+                    <div class="help-block with-errors"></div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="fieldsets col-sm-12">
+                    <input
+                      type="text"
+                      id="mobile"
+                      name="mobile"
+                      placeholder="Enter mobile"
+                      required
+                      data-error="Please fill Out"
+                    />
+                    <div class="help-block with-errors"></div>
+                  </div>
+                  <div class="fieldsets col-sm-12">
+                    <select name="Dtype" id="Dtype" required>
+                      <option value>Select Requirement</option>
+                      <option value="One Bedroom">One Bedroom</option>
+                      <option value="One Bedroom with Private Pool">
+                        One Bedroom with Private Pool
+                      </option>
+                      <option value="Three Bedroom">Three Bedroom</option>
+                      <option value="Studio Room">Studio Room</option>
+                    </select>
+                    <div class="help-block with-errors"></div>
+                  </div>
+                </div>
+                <div class="fieldsets">
+                  <textarea
+                    id="message"
+                    rows="4"
+                    name="message"
+                    placeholder="Enter your message"
+                    required
+                  ></textarea>
+                  <div class="help-block with-errors"></div>
+                </div>
+                <button
+                  type="submit"
+                  id="form-submit"
+                  class="btn lnk btn-main bg-btn"
+                >
+                  Submit <span class="circle"></span>
+                </button>
+                <div id="msgSubmit" class="h3 text-center hidden"></div>
+                <div class="clearfix"></div>
+
+                <p class="trm">
+                  All rates are currently displayed at discounted rates.<br />
+                  We take 2 days minimum for bookings/reservations
+                </p>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    {% endif %}
+
+
+    <!-- ad hero -->
+    <div
+      class="cta-section-1 pad-tb"
+      data-parallax="scroll"
+      data-speed="0.5"
+      data-image-src="{% static 'images/apartments/apt4.jpg' %}"
+    >
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="duructa text-center">
+              <p>DON&apos;T HESTITATE TO CONTACT US</p>
+              <h2>MAKE AN RESERVATION NOW</h2>
+              <a href="{% static '+234 802-442-7614' %}" class="callnow"
+                >Call: + 234 - 802 - 442 - 7614</a
+              >
+              <a href="{% static '#form' %}" class="cta mt30"> Enquire Now</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- our rooms -->
+    <section class="project-logo-section pad-tb">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-6">
+            <div class="common-heading-2 text-center">
+              <h1 class="mb15">Our Rooms</h1>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-12">
+            <div
+              class="apartments-block owl-carousel mt45"
+              data-slide="3"
+              data-slide-res="2"
+              data-autoplay="true"
+              data-nav="false"
+              data-dots="false"
+              data-space="30"
+              data-loop="true"
+              data-speed="800"
+            >
+              <div class="project-card-">
+                <div class="project-card">
+                  <img
+                    src="{% static 'images/apartments/apt1.jpg' %}"
+                    alt="text"
+                    class="img-fluid"
+                  />
+                </div>
+                <div class="home-details">
+                  <h3>One Bedroom</h3>
+                  <p>Lorem ipsum dolor sit amet</p>
+                  <ul class="feature-list">
+                    <li><i class="fas fa-bed"></i><span>Beds: 1</span></li>
+                    <li><i class="fas fa-bath"></i><span>Baths: 2</span></li>
+                    <li>
+                      <i class="fa-solid fa-badge-dollar"></i
+                      ><span>Price: 42, 500</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="project-card-">
+                <div class="project-card">
+                  <img
+                    src="{% static 'images/apartments/apt3.jpg' %}"
+                    alt="text"
+                    class="img-fluid"
+                  />
+                </div>
+                <div class="home-details">
+                  <h3>One Bedroom with Private Pool</h3>
+                  <p>Lorem ipsum dolor sit amet</p>
+                  <ul class="feature-list">
+                    <li><i class="fas fa-bed"></i><span>Beds: 1</span></li>
+                    <li><i class="fas fa-bath"></i><span>Baths: 3</span></li>
+                    <li><i class="fas fa-bath"></i><span>Pool: 1</span></li>
+                    <li>
+                      <i class="fas fa-ruler-vertical"></i
+                      ><span>Price: 72, 500</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="project-card-">
+                <div class="project-card">
+                  <img
+                    src="{% static 'images/apartments/apt11.jpg' %}"
+                    alt="text"
+                    class="img-fluid"
+                  />
+                </div>
+                <div class="home-details">
+                  <h3>Three Bedrooms</h3>
+                  <p>Lorem ipsum dolor sit amet</p>
+                  <ul class="feature-list">
+                    <li><i class="fas fa-bed"></i><span>Beds: 3</span></li>
+                    <li><i class="fas fa-bath"></i><span>Baths: 3</span></li>
+                    <li>
+                      <i class="fas fa-ruler-vertical"></i
+                      ><span>Price: 85, 000</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="project-card-">
+                <div class="project-card">
+                  <img
+                    src="{% static 'images/apartments/apt15.jpg' %}"
+                    alt="text"
+                    class="img-fluid"
+                  />
+                </div>
+                <div class="home-details">
+                  <h3>Studio Room</h3>
+                  <p>Lorem ipsum dolor sit amet</p>
+                  <ul class="feature-list">
+                    <li><i class="fas fa-bed"></i><span>Beds: 1</span></li>
+                    <li><i class="fas fa-bath"></i><span>Baths: 1</span></li>
+                    <li>
+                      <i class="fas fa-ruler-vertical"></i
+                      ><span>Price: 32, 500</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- apt specification -->
+    <section class="specification-section pad-tb" id="specification">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-6">
+            <div class="common-heading">
+              <h2>Apartment Specification</h2>
+              <p>
+                Our apartment is comfortable on the outside as well as inside.
+                We recognize the need for a serene, calming, and welcoming
+                environment to promote relaxation and rest both during the day
+                and at night.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="row mt45">
+          <div class="col-lg-12">
+            <div class="fltwithiconss">
+              <ul class="nav nav-tabs" id="myTab" role="tablist">
+                <li class="nav-item">
+                  <a
+                    class="nav-link1 active"
+                    id="Drawing-tab"
+                    data-toggle="tab"
+                    href="{% static '#Drawing' %}"
+                    role="tab"
+                    aria-controls="Drawing"
+                    aria-selected="true"
+                    ><span
+                      ><img src="{% static 'images/icons/studio.png' %}" alt="itawa"
+                    /></span>
+                    Studio Room
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link1"
+                    id="Kitchen-tab"
+                    data-toggle="tab"
+                    href="{% static '#Kitchen' %}"
+                    role="tab"
+                    aria-controls="Kitchen"
+                    aria-selected="false"
+                    ><span
+                      ><img src="{% static 'images/icons/kitchen.png' %}" alt="itawa"
+                    /></span>
+
+                    Kitchen</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link1"
+                    id="Bedroom-tab"
+                    data-toggle="tab"
+                    href="{% static '#Bedroom' %}"
+                    role="tab"
+                    aria-controls="Bedroom"
+                    aria-selected="false"
+                    ><span class=""
+                      ><img src="{% static 'images/icons/bedroom.png' %}" alt="itawa"
+                    /></span>
+                    Bedroom</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link1"
+                    id="Bathroom-tab"
+                    data-toggle="tab"
+                    href="{% static '#Bathroom' %}"
+                    role="tab"
+                    aria-controls="Bathroom"
+                    aria-selected="false"
+                    ><span class=""
+                      ><img src="{%static 'images/icons/bathroom.png' %}" alt="itawa"
+                    /></span>
+                    Bathroom</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link1"
+                    id="Balcony-tab"
+                    data-toggle="tab"
+                    href="{% static '#Balcony' %}"
+                    role="tab"
+                    aria-controls="Balcony"
+                    aria-selected="false"
+                    ><span class=""
+                      ><img src="{%static 'images/icons/pool.png' %}" alt="itawa"
+                    /></span>
+                    Swimming Pool</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="about-feature">
+              <div class="tab-content mt45" id="myTabContent">
+                <div
+                  class="tab-pane fade show active"
+                  id="Drawing"
+                  role="tabpanel"
+                  aria-labelledby="Drawing-tab"
+                >
+                  <div class="row justify-content-between">
+                    <div class="col-lg-5">
+                      <h3 class="mb15">Studio Room</h3>
+                      <p>
+                        Our apartment is comfortable on the outside as well as
+                        inside. We recognize the need for a serene, calming, and
+                        welcoming environment to promote relaxation and rest
+                        both during the day and at night.
+                      </p>
+                      <ul class="list-features mt30">
+                        <li>External - Texture Paint</li>
+                        <li>
+                          Internal - POP Finished Walls & Plastic Emulsion
+                          Paint.
+                        </li>
+                        <li>Lift Cladding - Granite/Marble</li>
+                        <li>Fully Air-Conditioned</li>
+                      </ul>
+                    </div>
+                    <div class="col-lg-6">
+                      <div class="feature-image">
+                        <img
+                          src="{% static 'images/apartments/apt23.jpg' %}"
+                          alt="feature-image"
+                          class="img-fluid"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="tab-pane fade"
+                  id="Kitchen"
+                  role="tabpanel"
+                  aria-labelledby="Kitchen-tab"
+                >
+                  <div class="row justify-content-between">
+                    <div class="col-lg-5">
+                      <h3 class="mb15">Kitchen</h3>
+                      <p>
+                        Itawa Developers, established under the flagship of Real
+                        Estate, bring to you a project of dreams
+                      </p>
+                      <ul class="list-features mt30">
+                        <li>External - Texture Paint</li>
+                        <li>
+                          Internal - POP Finished Walls & Plastic Emulsion
+                          Paint.
+                        </li>
+                        <li>Lift Cladding - Granite/Marble</li>
+                        <li>Fully Air-Conditioned</li>
+                      </ul>
+                    </div>
+                    <div class="col-lg-6">
+                      <div class="feature-image">
+                        <img
+                          src="{% static 'images/apartments/apt26.jpg' %}"
+                          alt="feature-image"
+                          class="img-fluid"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="tab-pane fade"
+                  id="Bedroom"
+                  role="tabpanel"
+                  aria-labelledby="Bedroom-tab"
+                >
+                  <div class="row justify-content-between">
+                    <div class="col-lg-5">
+                      <h3 class="mb15">Bedroom</h3>
+                      <p>
+                        Itawa Developers, established under the flagship of Real
+                        Estate, bring to you a project of dreams
+                      </p>
+                      <ul class="list-features mt30">
+                        <li>External - Texture Paint</li>
+                        <li>
+                          Internal - POP Finished Walls & Plastic Emulsion
+                          Paint.
+                        </li>
+                        <li>Lift Cladding - Granite/Marble</li>
+                        <li>External - Texture Paint</li>
+                      </ul>
+                    </div>
+                    <div class="col-lg-6">
+                      <div class="feature-image">
+                        <img
+                          src="{% static 'images/apartments/apt13.jpg' %}"
+                          alt="feature-image"
+                          class="img-fluid"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="tab-pane fade"
+                  id="Bathroom"
+                  role="tabpanel"
+                  aria-labelledby="Bathroom-tab"
+                >
+                  <div class="row justify-content-between">
+                    <div class="col-lg-5">
+                      <h3 class="mb15">Bathroom</h3>
+                      <p>
+                        Itawa Developers, established under the flagship of Real
+                        Estate, bring to you a project of dreams
+                      </p>
+                      <ul class="list-features mt30">
+                        <li>External - Texture Paint</li>
+                        <li>
+                          Internal - POP Finished Walls & Plastic Emulsion
+                          Paint.
+                        </li>
+                        <li>Lift Cladding - Granite/Marble</li>
+                        <li>External - Texture Paint</li>
+                      </ul>
+                    </div>
+                    <div class="col-lg-6">
+                      <div class="feature-image">
+                        <img
+                          src="{% static 'images/apartments/apt29.jpg' %}"
+                          alt="feature-image"
+                          class="img-fluid"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="tab-pane fade"
+                  id="Balcony"
+                  role="tabpanel"
+                  aria-labelledby="Balcony-tab"
+                >
+                  <div class="row justify-content-between">
+                    <div class="col-lg-5">
+                      <h3 class="mb15">Swimming Pool</h3>
+                      <p>
+                        Itawa Developers, established under the flagship of Real
+                        Estate, bring to you a project of dreams
+                      </p>
+                      <ul class="list-features mt30">
+                        <li>External - Texture Paint</li>
+                        <li>
+                          Internal - POP Finished Walls & Plastic Emulsion
+                          Paint.
+                        </li>
+                        <li>Lift Cladding - Granite/Marble</li>
+                        <li>External - Texture Paint</li>
+                      </ul>
+                    </div>
+                    <div class="col-lg-6">
+                      <div class="feature-image">
+                        <img
+                          src="{% static 'images/apartments/apt27.jpg' %}"
+                          alt="feature-image"
+                          class="img-fluid"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- photo gallery  -->
+    <section class="gallery-section2 pad-tb" id="gallery">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-6">
+            <div class="common-heading">
+              <h2>Photo Gallery</h2>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="row img-gallery-magnific m-spc98 mt15">
+          <div class="col-lg-3 col-md-4 col-6">
+            <div class="gallery-">
+              <a
+                class="image-popup-gallery"
+                href="{% static 'images/apartments/apt1.jpg' %}"
+                title="gallery title"
+              >
+                <img
+                  src="{% static 'images/apartments/apt1.jpg' %}"
+                  alt="gallery image"
+                  class="img-fluid"
+              /></a>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 col-6">
+            <div class="gallery-">
+              <a
+                class="image-popup-gallery"
+                href="{% static 'images/apartments/apt6.jpg' %}"
+                title="gallery title"
+              >
+                <img
+                  src="{% static 'images/apartments/apt6.jpg' %}"
+                  alt="gallery image"
+                  class="img-fluid"
+              /></a>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 col-6">
+            <div class="gallery-">
+              <a
+                class="image-popup-gallery"
+                href="{% static 'images/apartments/apt3.jpg' %}"
+                title="gallery title"
+              >
+                <img
+                  src="{% static 'images/apartments/apt3.jpg' %}"
+                  alt="gallery image"
+                  class="img-fluid"
+                />
+              </a>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 col-6">
+            <div class="gallery-">
+              <a
+                class="image-popup-gallery"
+                href="{% static 'images/apartments/apt9.jpg' %}"
+                title="gallery title"
+              >
+                <img
+                  src="{% static 'images/apartments/apt9.jpg' %}"
+                  alt="gallery image"
+                  class="img-fluid"
+              /></a>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 col-6">
+            <div class="gallery-">
+              <a
+                class="image-popup-gallery"
+                href="{% static 'images/apartments/apt18.jpg' %}"
+                title="gallery title"
+              >
+                <img
+                  src="{% static 'images/apartments/apt18.jpg' %}"
+                  alt="gallery image"
+                  class="img-fluid"
+              /></a>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 col-6">
+            <div class="gallery-">
+              <a
+                class="image-popup-gallery"
+                href="{% static 'images/apartments/apt8.jpg' %}"
+                title="gallery title"
+              >
+                <img
+                  src="{% static 'images/apartments/apt8.jpg' %}"
+                  alt="gallery image"
+                  class="img-fluid"
+                />
+              </a>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 col-6">
+            <div class="gallery-">
+              <a
+                class="image-popup-gallery"
+                href="{% static 'images/apartments/apt12.jpg' %}"
+                title="gallery title"
+              >
+                <img
+                  src="{% static 'images/apartments/apt12.jpg' %}"
+                  alt="gallery image"
+                  class="img-fluid"
+              /></a>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 col-6">
+            <div class="gallery-">
+              <a
+                class="image-popup-gallery"
+                href="{% static 'images/apartments/apt29.jpg' %}"
+                title="gallery title"
+              >
+                <img
+                  src="{% static 'images/apartments/apt29.jpg' %}"
+                  alt="gallery image"
+                  class="img-fluid"
+              /></a>
+            </div>
+          </div>
+          <!-- <div class="col-lg-3 col-md-4 col-6">
+            <div class="gallery-">
+              <a
+                class="image-popup-gallery"
+                href="{% static 'images/apartments/apt26.jpg"
+                title="gallery title"
+              >
+                <img
+                  src="{% static 'images/apartments/apt26.jpg"
+                  alt="gallery image"
+                  class="img-fluid"
+                />
+              </a>
+            </div>
+          </div> -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Nearby places -->
+    <section class="location-section pad-tb" id="location">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-6">
+            <div class="common-heading-2 text-center">
+              <h2 class="mb15">Nearby Places</h2>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="row justify-content-between mt15">
+          <div class="col-lg-12 mt30">
+            <ul class="loc-list">
+              <li>
+                <img src="{% static 'images/icons/airport.png' %}" alt="itawa" /> Abuja Airport
+                <span>6.0 Km</span>
+              </li>
+              <li>
+                <img src="{% static 'images/icons/railway-station.png' %}" alt="itawa" />
+                Railway Station <span>8.0 Km</span>
+              </li>
+              <li>
+                <img src="{% static 'images/icons/shop.png' %}" alt="itawa" /> NADREM Super
+                Store
+                <span>2.5 Km</span>
+              </li>
+              <li>
+                <img src="{% static 'images/icons/university.png' %}" alt="itawa" /> Federal
+                University Of Abuja
+                <span>3.8 Km</span>
+              </li>
+              <li>
+                <img src="{% static 'images/icons/cinema.png' %}" alt="itawa" /> Silverbird
+                Cinema
+                <span>2.5 Km</span>
+              </li>
+              <li>
+                <img src="{% static 'images/icons/hospital.png' %}" alt="itawa" /> General
+                Hospital, Kubwa.<span> 3.0 Km</span>
+              </li>
+              <li>
+                <img src="{% static 'images/icons/dumbbell.png' %}" alt="itawa" /> Basley GYM
+                <span>4.3 Km</span>
+              </li>
+              <li>
+                <img src="{% static 'images/icons/stadium.png' %}" alt="itawa" /> National
+                Stadium <span>2.5 Km</span>
+              </li>
+            </ul>
+          </div>
+          <div class="col-lg-12 mt40">
+            <div class="mapouter">
+              <div class="gmap_canvas">
+                <div class="mapouter">
+                  <div class="gmap_canvas">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15755.559544784614!2d7.3337872!3d9.1644052!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x104dd9452305db85%3A0x82b8f563b847cf2d!2sDurudove%20apartment!5e0!3m2!1sen!2sng!4v1691153512615!5m2!1sen!2sng"  style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                    
+                  </div>
+                  <style>
+                    .mapouter {
+                      position: relative;
+                      text-align: right;
+                      width: 100%;
+                      height: 543px;
+                    }
+                    .gmap_canvas {
+                      overflow: hidden;
+                      background: none !important;
+                      width: 100%;
+                      height: 543px;
+                    }
+                    .gmap_iframe {
+                      height: 543px !important;
+                    }
+                  </style>
+                </div>
+                <a href="{% static 'https://capcuttemplate.org/' %}">Capcut Template</a>
+              </div>
+              <style>
+                .mapouter {
+                  position: relative;
+                  text-align: right;
+                  width: 100%;
+                  height: 543px;
+                }
+                .gmap_canvas {
+                  overflow: hidden;
+                  background: none !important;
+                  width: 100%;
+                  height: 543px;
+                }
+                .gmap_iframe {
+                  height: 543px !important;
+                }
+              </style>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- staff -->
+    <section class="agent-section pad-tb">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-6">
+            <div class="common-heading-2 text-center">
+              <h2 class="mb15">Meet The Team</h2>
+              <p class="mb15">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="pb-4 pt-4">
+          <div class="agent-photo">
+            <div class="media">
+              <img class="mr-3" src="{% static 'images/agents/ceo.jpg' %}" alt="image" />
+              <div class="media-body agent-details">
+                <h5 class="flex justify-center">Mr. Albert Onuoha</h5>
+                <p>
+                  Cras sit amet nibh libero, in gravida nulla. Nulla vel metus
+                  scelerisque ante sollicitudin.
+                </p>
+                <p><span>- CEO | Owner</span></p>
+                <div class="social-links-">
+                  <a href="{% static '#' %}"><i class="fab fa-facebook-square"></i> </a>
+                  <a href="{% static '#' %}"><i class="fab fa-twitter-square"></i> </a>
+                  <a href="{% static '#' %}"><i class="fab fa-linkedin"></i> </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row mt45">
+          <div class="col-md-6">
+            <div class="agent-photo">
+              <div class="media">
+                <img class="mr-3" src="{% static 'images/agents/mark.jpg' %}" alt="image" />
+                <div class="media-body agent-details">
+                  <h5>Mr. Mark Michaels</h5>
+                  <p>
+                    Cras sit amet nibh libero, in gravida nulla. Nulla vel metus
+                    scelerisque ante sollicitudin.
+                  </p>
+                  <p><span>- Manager | Supervisor</span></p>
+                  <div class="social-links-">
+                    <a href="{% static '#' %}"><i class="fab fa-facebook-square"></i> </a>
+                    <a href="{% static '#' %}"><i class="fab fa-twitter-square"></i> </a>
+                    <a href="{% static '#' %}"><i class="fab fa-linkedin"></i> </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            <div class="agent-photo m-spc">
+              <div class="media">
+                <img class="mr-3" src="{% static 'images/agents/clem.jpg' %}" alt="image" />
+                <div class="media-body agent-details">
+                  <h5>Ms. Clemetina Nwankwor</h5>
+                  <p>
+                    Cras sit amet nibh libero, in gravida nulla. Nulla vel metus
+                    scelerisque ante sollicitudin.
+                  </p>
+                  <p><span>House Keeper</span></p>
+                  <div class="social-links-">
+                    <a href="{% static '#' %}"><i class="fab fa-facebook-square"></i> </a>
+                    <a href="{% static '#' %}"><i class="fab fa-twitter-square"></i> </a>
+                    <a href="{% static '#' %}"><i class="fab fa-linkedin"></i> </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- reviews -->
+    <section class="reviews-section pad-tb" id="review">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-6">
+            <div class="common-heading-2 text-center">
+              <h2 class="mb15">Our Client Reviews</h2>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-12">
+            <div
+              class="reviews-block owl-carousel mt45"
+              data-slide="3"
+              data-slide-res="2"
+              data-autoplay="true"
+              data-nav="false"
+              data-dots="false"
+              data-space="30"
+              data-loop="true"
+              data-speed="600"
+            >
+              <div class="reviews-card">
+                <img src="{% static 'images/reviews/review-image-1.jpg' %}" alt="review" />
+                <h4>Natasha Chavez <span>Jaipur</span></h4>
+                <span><i class="fas fa-quote-left"></i></span>
+                <p>
+                  Lorem ipsum dolor sit amet adipiscing elit sed orci dictum
+                  sagittis libero vitae auctor elit. Praesent accumsan mauris
+                  eget tortor auctor efficitur nunc iaculis nunc.
+                </p>
+              </div>
+              <div class="reviews-card">
+                <img src="{% static 'images/reviews/review-image-2.jpg' %}" alt="review" />
+                <h4>Tom Smile<span>Sydney</span></h4>
+                <span><i class="fas fa-quote-left"></i></span>
+                <p>
+                  Lorem ipsum dolor sit amet adipiscing elit sed orci dictum
+                  sagittis libero vitae auctor elit. Praesent accumsan mauris
+                  eget tortor auctor efficitur nunc iaculis nunc.
+                </p>
+              </div>
+              <div class="reviews-card">
+                <img src="{% static 'images/reviews/review-image-3.jpg' %}" alt="review" />
+                <h4>Mike Smile<span>Newyork City</span></h4>
+                <span><i class="fas fa-quote-left"></i></span>
+                <p>
+                  Lorem ipsum dolor sit amet adipiscing elit sed orci dictum
+                  sagittis libero vitae auctor elit. Praesent accumsan mauris
+                  eget tortor auctor efficitur nunc iaculis nunc.
+                </p>
+              </div>
+              <div class="reviews-card">
+                <img src="{% static 'images/reviews/review-image-2.jpg' %}" alt="review" />
+                <h4>John Doe<span>Los Angeles</span></h4>
+                <span><i class="fas fa-quote-left"></i></span>
+                <p>
+                  Lorem ipsum dolor sit amet adipiscing elit sed orci dictum
+                  sagittis libero vitae auctor elit. Praesent accumsan mauris
+                  eget tortor auctor efficitur nunc iaculis nunc.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4">
+            <div class="footer-">
+              <a class="navbar-brand text-white" href="{% static './' %}">
+                <img src="{% static 'images/duru.png' %}" alt="Logo" width="100" height="50"
+              /></a>
+            </div>
+            <p>
+              Durudove Apartments is a luxury serviced apartment located in
+              Kubwa, Abuja Nigeria.
+            </p>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <h3>Contact Us</h3>
+            <ul class="footer-address-list">
+              <li>
+                <i class="fas fa-map-marker-alt"></i> No 14 Mariya Dantata
+                street, Dantata estate, Kubwa, Abuja
+              </li>
+              <li>
+                <i class="fas fa-phone-alt"></i>
+                <a href="{% static 'tel: + 234-802-442-7614' %}"> + 234 - 802 - 442 - 7614</a>
+              </li>
+              <li>
+                <i class="fas fa-envelope"></i>
+                <a href="{% static 'durudoveapartments@gmail.com' %}"
+                  ><span
+                    class="__cf_email__"
+                    data-cfemail="ef86818980af8d9a9c86818a9c9c818e828ac18c8082"
+                    >durudoveapartments@gmail.com</span
+                  ></a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <h3>Follow Us</h3>
+            <div class="footer-social-media-icons">
+              <a
+                href="{% static 'https://www.facebook.com/profile.php?id=100077602033561' %}"
+                target="blank"
+                class="facebook"
+                ><i class="fab fa-facebook"></i
+              ></a>
+              <a href="{% static 'javascript:void(0)' %}" target="blank" class="twitter"
+                ><i class="fab fa-twitter"></i
+              ></a>
+              <a
+                href="{% static 'https://www.instagram.com/durudove_apartments/' %}"
+                target="blank"
+                class="instagram"
+                ><i class="fab fa-instagram"></i
+              ></a>
+              <a href="{% static 'javascript:void(0)' %}" target="blank" class="bg-success"
+                ><i class="fa-brands fa-whatsapp"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12">
+              <div class="footer-- text-center pt20">
+                <p>
+                  Copyright © 2023 Durudove. All rights reserved. Template By
+                  <a href="{% static 'https://github.com/skad12' %}" target="blank">SKAD</a>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script
+      data-cfasync="false"
+      src="{% static '/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js' %}"
+    ></script>
+    <script src="{% static 'js/jquery.min.js' %}"></script>
+    <script src="{% static 'js/bootstrap.min.js' %}"></script>
+    <script src="{% static 'js/popper.min.js' %}"></script>
+    <script src="{% static 'js/jquery.magnific-popup.min.js' %}"></script>
+    <script src="{% static 'js/owl.carousel.js' %}"></script>
+    <script src="{% static 'js/swiper.min.js' %}"></script>
+    <script src="{% static 'js/SmoothScroll.min.js' %}"></script>
+    <script src="{% static 'js/parallax.min.js' %}"></script>
+    <script src="{% static 'js/validator.min.js' %}"></script>
+    <script src="{% static 'js/form.js' %}"></script>
+
+    <script src="{% static 'js/main.js' %}"></script>
+    <script src="{% static 'js/hero-script.js' %}"></script>
+    
+  </body>
+</html>
+{% endblock %}
